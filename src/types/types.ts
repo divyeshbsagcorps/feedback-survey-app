@@ -12,6 +12,14 @@ export type Question = {
   required?: boolean;
   placeholder?: string;
   options?: Option[];
+  step?: number;
+};
+
+export type FormStep = {
+  id: number;
+  title: string;
+  icon: string;
+  description?: string;
 };
 
 export type FormValues = {
